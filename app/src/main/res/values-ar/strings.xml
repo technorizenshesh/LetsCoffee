@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<resources>
+    <string name="continue_with_email">تواصل مع بريدك الإلكتروني أو رقم هاتفك</string>
+    <string name="password">الباسورد</string>
+    <string name="email">الإيميل</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="forgot_password"><u>إعادة تعيين كلمة السر?</u></string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="required">حقل مطلوب</string>
+    <string name="login_or_create_an_account"> تسجيل الدخول او إنشاء حساب جديد</string>
+    <string name="login_or_msg">سجل دخول أو قم بالتسجيل لتلقي المكافأت والخصومات وحفظ التفاصيل الخاصة بك</string>
+    <string name="create_your_account">إنشاء حسابك </string>
+    <string name="full_name">الأسم بالكامل</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="verify">التحقق</string>
+    <string name="no_result_found">لم يتم العثور على نتيجة</string>
+    <string name="reject">مرفوض</string>
+    <string name="view_all"><u>مشاهدة الكل</u></string>
+    <string name="email_or_phone">إيميل او رقم الجوال</string>
+    <string name="mobile_number">رقم الجوال</string>
+    <string name="profile">الحساب</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="my_profile">حسابي</string>
+    <string name="setting">إعدادات</string>
+    <string name="membership">عضوية</string>
+    <string name="my_order">طلباتي</string>
+    <string name="about_us">من نحن</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="edit_profile">تعديل حسابي</string>
+    <string name="update_now">حدث الأن</string>
+    <string name="notification">الإشعارات</string>
+    <string name="order_details">تفاصيل الطلب</string>
+    <string name="date_of_barth">تاريخ الميلاد</string>
+    <string name="no_match">كلمة المرور غير متطابقة</string>
+    <string name="date_of_barth_required">تاريخ الميلاد مطلوب</string>
+    <string name="submit">إرسال</string>
+    <string name = "mx_qty_msg"> الحد الأقصى لكمية العناصر المتاحة </string>
+    <string name = "explore_category"> استكشاف الفئة </string>
+    <string name = "near_for_you"> قريب منك </string>
+    <string name = "register_later"> التسجيل لاحقًا </string>
+    <string name = "register_now"> سجل الآن </string>
+    <string name = "trt_now"> جرب الآن </string>
+    <string name = "language"> اللغة </string>
+    <string name = "apply"> تطبيق </string>
+    <string name = "arabic"> العربية </string>
+    <string name = "search"> بحث </string>
+    <string name = "cart"> عربة التسوق </string>
+    <string name = "pay_now"> الدفع الآن </string>
+    <string name = "information"> معلومات </string>
+    <string name = "location"> الموقع </string>
+    <string name="choose_the_day">أختر اليوم</string>
+    <string name="add_address">أضف عنوانك</string>
+    <string name="house_flat_no">House/ Flat No.</string>
+    <string name="landmark">Landmark</string>
+    <string name="order_summery">ملخص الطلب</string>
+    <string name="apply_coupon">فعل الكوبون</string>
+    <string name="enter_coupon_code">أدخل  كود الكوبون</string>
+    <string name = "choose_the_time"> اختر الوقت </string>
+    <string name = "evening_night"> المساء والليل </string>
+    <string name = "next"> التالي </string>
+    <string name = "hours_minutes"> الساعات والدقائق </string>
+    <string name = "no_order_found"> لم يتم العثور على طلب </string>
+    <string name = "order_info"> معلومات الطلب </string>
+    <string name = "apply_promo_code"> تطبيق الرمز الترويجي </string>
+    <string name = "payment_info"> معلومات الدفع </string>
+    <string name = "select_coupon"> "القسيمة المحددة:" </string>
+    <string name = "no_record_available"> لا يوجد سجل متاح </string>
+    <string name = "total_pay"> إجمالي الدفع </string>
+    <string name = "item_total"> إجمالي العنصر </string>
+    <string name = "add_payment_details"> إضافة تفاصيل الدفع </string>
+    <string name = "debit_card_credit_card_online"> بطاقة الخصم / بطاقة الائتمان / عبر الإنترنت </string>
+    <string name = "holder_name"> اسم الحامل </string>
+    <string name = "card_number"> رقم البطاقة </string>
+    <string name = "expiry_date"> تاريخ انتهاء الصلاحية </string>
+    <string name = "CVV"> CVV / CVC </string>
+    <string name = "request_ime"> وقت الطلب </string>
+    <string name = "time_receivve_request"> وقت استلام الطلب </string>
+    <string name = "my_membership"> عضويتي </string>
+    <string name = "total_membership"> إجمالي العضوية </string>
+    <string name="currency">ر.س.</string>
+    <string name="item_tax">ضريبة العنصر</string>
+    <string name="morning">صباح</string>
+    <string name="afternoon">بعد الظهر</string>
+    <array name="language">
+        <item>تغيير اللغة</item>
+        <item>English</item>
+        <item>عربى</item>
+    </array>
+</resources>
+
+
+
+
+
+

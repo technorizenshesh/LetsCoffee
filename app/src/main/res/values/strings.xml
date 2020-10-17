@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name" translatable="false">LetsCoffee</string>
+    <string name="google_key" translatable="false">AIzaSyBsSViJ6n9cRn5KPeupG5LbRWeGnRyUygA</string>
+    <string name="map_key" translatable="false">AIzaSyBRm6WUMN-xG1srtuFGe_fquKrMFNrgdZc</string>
+    <string name="continue_with_email">Continue with email OR Phone Number</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="create_account">Create Account</string>
+    <string name="required">Required</string>
+    <string name="login_or_create_an_account">Login or create an account</string>
+    <string name="login_or_msg">Login or create an account to receive reward and save your detais for faster checkout experiences</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="full_name">Full name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="verify">Verify</string>
+    <string name="no_result_found">No Result Found</string>
+    <string name="reject">Reject</string>
+    <string name="view_all"><u>View All</u></string>
+    <string name="email_or_phone">Email OR Phone Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="my_profile">My Profile</string>
+    <string name="setting">Setting</string>
+    <string name="membership">Membership</string>
+    <string name="my_order">My Order</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="update_now">Update Now</string>
+    <string name="notification">Notification</string>
+    <string name="order_details">Order Details</string>
+    <string name="date_of_barth">Date Of Barth</string>
+    <string name="no_match">Password not match</string>
+    <string name="date_of_barth_required">Date of barth required</string>
+    <string name="submit">Submit</string>
+    <string name="mx_qty_msg">\"Max Item Quantity available \"</string>
+    <string name="explore_category">Explore Category</string>
+    <string name="near_for_you">Near for you</string>
+    <string name="register_later">Register Later</string>
+    <string name="register_now">Register Now</string>
+    <string name="trt_now">Try Now</string>
+    <string name="language">Language</string>
+    <string name="apply">Apply</string>
+    <string name="arabic">Arabic</string>
+    <string name="search">Search</string>
+    <string name="cart">Cart</string>
+    <string name="pay_now">Pay now</string>
+    <string name="information">Information</string>
+    <string name="location">Location</string>
+    <string name="choose_the_day">Choose The Day</string>
+    <string name="add_address">Add Address</string>
+    <string name="house_flat_no">House/ Flat No.</string>
+    <string name="landmark">Landmark</string>
+    <string name="order_summery">Order Summery</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="enter_coupon_code">Enter coupon code</string>
+    <string name="order_status">Order Status</string>
+    <string name="order_history">Order History</string>
+    <string name="choose_the_time">Choose the Time</string>
+    <string name="evening_night"><![CDATA[Evening & Night]]></string>
+    <string name="next">Next</string>
+    <string name="hours_minutes"><![CDATA[Hours & minutes]]></string>
+    <string name="no_order_found">No Order Found</string>
+    <string name="order_info">Order Info</string>
+    <string name="apply_promo_code">Apply Promo Code</string>
+    <string name="payment_info">Payment Info</string>
+    <string name="select_coupon">"Selected Coupon : "</string>
+    <string name="no_record_available">No Record available</string>
+    <string name="total_pay">Total Pay</string>
+    <string name="item_total">Item Total</string>
+    <string name="add_payment_details">Add Payment details</string>
+    <string name="debit_card_credit_card_online">Debit Card/ Credit Card/ Online</string>
+    <string name="holder_name">holder name</string>
+    <string name="card_number">Card number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="CVV">CVV/CVC</string>
+    <string name="request_ime">Request time</string>
+    <string name="time_receivve_request">Time to receive request</string>
+    <string name="my_membership">My Membership</string>
+    <string name="total_membership">Total Membership</string>
+    <string name="currency">S.A.R</string>
+    <string name="item_tax">Item Tax</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <array name="language">
+        <item>Change Language</item>
+        <item>English</item>
+        <item>Arabic</item>
+    </array>
+</resources>

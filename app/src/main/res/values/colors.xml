@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="bg_splash">#f5f5f5</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_e5">#e5e5e5</color>
+    <color name="gray_f6">#f6f6f6</color>
+    <color name="gray_6">#666666</color>
+    <color name="blue">#5A96C5</color>
+    <color name="golden">#ECB718</color>
+    <color name="home_bg_1">#32ADEA</color>
+    <color name="home_bg_2">#58E2E2</color>
+    <color name="home_bg_3">#94CD67</color>
+    <color name="home_bg_4">#CB79B4</color>
+    <color name="home_bg_5">#8383DF</color>
+    <color name="home_bg_6">#A490DA</color>
+    <color name="card_1">#7BC144</color>
+    <color name="card_2">#32DBDB</color>
+    <color name="card_3">#029AE5</color>
+</resources>

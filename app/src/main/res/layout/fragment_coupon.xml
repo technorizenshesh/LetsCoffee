@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.FragmentUserType">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:focusable="true">
+        <include layout="@layout/header"/>
+        <RelativeLayout
+            android:id="@+id/header"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView style="@style/img_back"
+                android:id="@+id/img_back"
+                android:tint="@color/white"/>
+            <TextView style="@style/tv_header_2"
+                android:textColor="@color/white"
+                android:text="@string/apply_coupon"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_bg"
+                    android:padding="@dimen/_5sdp">
+                    <TextView style="@style/tv_header_2"
+                        android:id="@+id/tv_apply"
+                        android:text="Apply"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:layout_width="@dimen/_80sdp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btn_primary" />
+                    <EditText
+                        android:layout_toStartOf="@+id/tv_apply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_coupon_code"/>
+                </RelativeLayout>
+                <TextView style="@style/tv_title"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Or Select The Coupon From the Last Below"/>
+             <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/swipe_refresh">
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                     android:orientation="vertical"
+                     android:id="@+id/recycle_coupon"/>
+             </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

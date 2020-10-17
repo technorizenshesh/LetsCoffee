@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.FragmentUserType">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView style="@style/img_back"
+                android:id="@+id/img_back" />
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView style="@style/tv_header_2"
+                android:padding="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/order_status" />
+            <TextView style="@style/tv_title"
+                android:id="@+id/tv_order_id"
+                android:layout_gravity="center"
+                android:text="10 Min" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/img_done"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/ic_done"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/bg_black_circle"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_toEndOf="@+id/img_done">
+                        <TextView style="@style/tv_description"
+                            android:text="Order Received"/>
+                        <TextView style="@style/tv_title"
+                            android:id="@+id/tv_date"
+                            android:textStyle="bold"
+                            android:text="09:10 AM, 14 Jun 2020"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/img_done1"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/bg_gray_circle"/>
+                    <ImageView
+                        android:id="@+id/img_call"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_black_circle"
+                        android:src="@drawable/ic_call"/>
+                    <LinearLayout
+                        android:layout_toStartOf="@+id/img_call"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_toEndOf="@+id/img_done1">
+                        <TextView style="@style/tv_description"
+                            android:text="Order Preparing"/>
+                        <TextView style="@style/tv_title"
+                            android:textStyle="bold"
+                            android:text="----"/>
+                        <TextView style="@style/tv_title"
+                            android:text="TRACKING"
+                            android:visibility="gone"
+                            android:id="@+id/tv_tracking"
+                            android:textColor="@color/white"
+                            android:drawableEnd="@drawable/ic_my_location"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:background="@drawable/btn_primary"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/img_done3"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/bg_gray_circle"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_toEndOf="@+id/img_done3">
+                        <TextView style="@style/tv_description"
+                            android:text="Delivery"/>
+                        <TextView style="@style/tv_title"
+                            android:textStyle="bold"
+                            android:text="09:10 AM, 14 Jun 2020"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/img_done4"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/bg_gray_circle"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_toEndOf="@+id/img_done4">
+                        <TextView style="@style/tv_description"
+                            android:text="Picup Ready"/>
+                        <TextView style="@style/tv_title"
+                            android:textStyle="bold"
+                            android:text="-----"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"/>
+                <Button style="@style/btn_primary"
+                    android:id="@+id/btn_order_history"
+                    android:text="@string/order_history"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.FragmentUserType">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true">
+        <include layout="@layout/header"/>
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+            <ImageView style="@style/img_back"
+                android:id="@+id/img_back"
+                android:tint="@color/white"/>
+            <TextView style="@style/tv_header_2"
+                android:text="@string/profile"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+             <TextView style="@style/et_parent_2"
+                 android:id="@+id/tv_my_profile"
+                 android:text="@string/my_profile"
+                 android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:id="@+id/tv_setting"
+                    android:text="@string/setting"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:text="@string/membership"
+                    android:id="@+id/tv_membership"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:id="@+id/tv_order"
+                    android:text="@string/my_order"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:text="@string/about_us"
+                    android:id="@+id/tv_about_us"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:text="@string/privacy_policy"
+                    android:id="@+id/tv_privacy_policy"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:text="@string/contact_us"
+                    android:id="@+id/tv_contact_us"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp" />
+                <Button
+                    android:id="@+id/btn_logout"
+                    style="@style/btn_primary"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/logout"
+                    android:textAllCaps="false" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

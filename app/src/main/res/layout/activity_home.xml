@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navDrawer">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:layout_above="@+id/bottom_navigation"
+            android:id="@+id/nav_host_home"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation_main" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            app:labelVisibilityMode="unlabeled"
+            android:id="@+id/bottom_navigation"
+            app:itemIconTint="@drawable/botom_selector"
+            app:menu="@menu/bottom_menu"/>
+        <ImageView
+            android:id="@+id/img_card"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/bottom_navigation"
+            android:layout_marginBottom="-45dp"
+            android:elevation="@dimen/_10sdp"
+            android:padding="@dimen/_15sdp"
+            android:background="@drawable/cart_menu_bg"
+            android:src="@drawable/ic_shopping_cart"/>
+    </RelativeLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:id="@+id/nav_view">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:id="@+id/user_image"
+                        android:src="@drawable/defult_user"/>
+                    <TextView style="@style/tv_header_medium"
+                        android:text="user Name"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_toEndOf="@+id/user_image"
+                        android:id="@+id/tv_user_name" />
+                    <RatingBar
+                        android:layout_toEndOf="@+id/user_image"
+                        android:layout_below="@+id/tv_user_name"
+                        style="@style/RatingBarSmall"
+                        android:rating="5"/>
+
+                </RelativeLayout>
+                <TextView style="@style/et_parent_2"
+                    android:id="@+id/tv_my_profile"
+                    android:text="@string/my_profile"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:id="@+id/tv_setting"
+                    android:text="@string/setting"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:text="@string/membership"
+                    android:id="@+id/tv_membership"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:text="@string/my_membership"
+                    android:id="@+id/tv_my_membership"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:id="@+id/tv_order"
+                    android:text="@string/my_order"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:id="@+id/tv_about_us"
+                    android:text="@string/about_us"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:text="@string/privacy_policy"
+                    android:id="@+id/tv_privacy_policy"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+                <TextView style="@style/et_parent_2"
+                    android:id="@+id/tv_contact_us"
+                    android:text="@string/contact_us"
+                    android:drawableEnd="@drawable/ic_arrow_right"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp" />
+                <Button
+                    android:id="@+id/btn_logout"
+                    style="@style/btn_primary"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/logout"
+                    android:textAllCaps="false" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp" />
+            </LinearLayout>
+            </ScrollView>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

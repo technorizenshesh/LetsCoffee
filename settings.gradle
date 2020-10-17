@@ -1,0 +1,2 @@
+rootProject.name='LetsCoffee'
+include ':app', ':utils'

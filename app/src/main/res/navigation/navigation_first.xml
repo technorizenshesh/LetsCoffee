@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_first"
+    app:startDestination="@id/nav_first">
+    <fragment android:id="@+id/nav_first"
+        android:name="com.letscoffee.Fragments.FragmentFirst"
+        tools:layout="@layout/fragment_first">
+        <action android:id="@+id/action_login"
+            app:destination="@+id/nav_login"/>
+        <action android:id="@+id/action_register"
+            app:destination="@+id/nav_register"/>
+    </fragment>
+<fragment android:id="@+id/nav_login"
+    android:name="com.letscoffee.Fragments.FragmentLogin"
+    tools:layout="@layout/fragment_login">
+    <action android:id="@+id/action_register"
+        app:destination="@+id/nav_register"/>
+    <action android:id="@+id/action_forgot_password"
+        app:destination="@+id/nav_forget_password"/>
+    <action android:id="@+id/action_verify"
+        app:destination="@+id/nav_verify_mobile"/>
+</fragment>
+    <fragment android:id="@+id/nav_register"
+        android:name="com.letscoffee.Fragments.FragmentCreateAccount"
+        tools:layout="@layout/fragment_create_account">
+        <action android:id="@+id/action_verify"
+            app:destination="@+id/nav_verify_mobile"/>
+    </fragment>
+    <fragment android:id="@+id/nav_verify_mobile"
+        android:name="com.letscoffee.Fragments.FragmentVerifyMobile"
+        tools:layout="@layout/fragment_verify_mobile">
+    </fragment>
+    <fragment android:id="@+id/nav_forget_password"
+        android:name="com.letscoffee.Fragments.FragmentForgotPassword"
+        tools:layout="@layout/fragment_forgot_password">
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/card_bg"/>
+            <RelativeLayout
+                android:layout_toEndOf="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView  style="@style/tv_header_medium"
+                    android:id="@+id/tv_shop_name"
+                    android:text="Doppio Coffee" />
+                <TextView  style="@style/tv_description"
+                    android:layout_below="@+id/tv_title"
+                    android:id="@+id/tv_description"
+                    android:visibility="gone"
+                    android:text="Dummy test is test that use is dynamic" />
+                <TextView  style="@style/tv_title"
+                    android:id="@+id/tv_amount"
+                    android:layout_below="@+id/tv_shop_name"
+                    android:text="$35"
+                    android:textStyle="bold"/>
+                <TextView style="@style/tv_time"
+                    android:id="@+id/tv_time"
+                    android:layout_alignParentEnd="true"
+                    android:text="10 Min"/>
+                <TextView  style="@style/tv_title"
+                    android:id="@+id/tv_view"
+                    android:layout_below="@+id/tv_shop_name"
+                    android:text="View"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_black_courve"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/_5sdp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

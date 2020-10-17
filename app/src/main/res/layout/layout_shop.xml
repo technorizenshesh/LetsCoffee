@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_5sdp">
+        <ImageView
+            android:id="@+id/image"
+            android:scaleType="fitXY"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:src="@drawable/card_bg"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_toEndOf="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-45dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView  style="@style/tv_header_medium"
+                    android:id="@+id/tv_title"
+                    android:text="Doppio Coffee Shop" />
+                <TextView  style="@style/tv_description"
+                    android:layout_below="@+id/tv_title"
+                    android:id="@+id/tv_address"
+                    android:text="New York, USA" />
+                <RatingBar style="@style/RatingBarSmall"
+                    android:id="@+id/rating"/>
+                <TextView  style="@style/tv_title"
+                    android:id="@+id/tv_status"
+                    android:layout_below="@+id/tv_description"
+                    android:text="Open"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_black_courve"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_5sdp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "108603725748",
+    "firebase_url": "https://technorizen-9c0c4.firebaseio.com",
+    "project_id": "technorizen-9c0c4",
+    "storage_bucket": "technorizen-9c0c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108603725748:android:7fc4c02af8b37dda4604e1",
+        "android_client_info": {
+          "package_name": "com.letscoffee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108603725748-b0elcf476aij8989shle7u50jkajvfn7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.letscoffee",
+            "certificate_hash": "c8aae2bcd8b7a797cda2f808160bc2ee53878283"
+          }
+        },
+        {
+          "client_id": "108603725748-r866ri17n0kejc7rp8iltraikotv3mrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5-WXSNCKpB0gy8DZcxVIgR1p21S28Dn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108603725748-r866ri17n0kejc7rp8iltraikotv3mrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108603725748:android:c89525cd4c7ee2fe4604e1",
+        "android_client_info": {
+          "package_name": "com.rlm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108603725748-r866ri17n0kejc7rp8iltraikotv3mrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5-WXSNCKpB0gy8DZcxVIgR1p21S28Dn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108603725748-r866ri17n0kejc7rp8iltraikotv3mrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

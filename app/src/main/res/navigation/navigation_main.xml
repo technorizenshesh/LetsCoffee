@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.letscoffee.Fragments.FragmentDashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_notification"
+            app:destination="@id/nav_notification" />
+        <action
+            android:id="@+id/action_view_category"
+            app:destination="@id/nav_view_category" />
+        <action android:id="@+id/action_shop_details"
+            app:destination="@+id/nav_shop_details"/>
+        <action android:id="@+id/action_near_by"
+            app:destination="@+id/nav_near_shop"/>
+        <action android:id="@+id/action_search"
+            app:destination="@+id/nav_search_shop"/>
+        <action android:id="@+id/action_my_membership"
+            app:destination="@+id/nav_my_membership"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.letscoffee.Fragments.FragmentProfile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_my_profile"
+            app:destination="@id/nav_edit_profile" />
+        <action
+            android:id="@+id/action_setting"
+            app:destination="@id/nav_setting" />
+        <action
+            android:id="@+id/action_membership"
+            app:destination="@id/nav_membership" />
+        <action
+            android:id="@+id/action_order"
+            app:destination="@id/nav_order" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_edit_profile"
+        android:name="com.letscoffee.Fragments.FragmentEditProfile"
+        tools:layout="@layout/fragment_edit_profile">
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_membership"
+        android:name="com.letscoffee.Fragments.FragmentMembership"
+        tools:layout="@layout/fragment_membership">
+        <action android:id="@+id/action_choose_day"
+            app:destination="@+id/nav_choose_day"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.letscoffee.Fragments.FragmentOrder"
+        tools:layout="@layout/fragment_my_order">
+        <action android:id="@+id/action_order_details"
+            app:destination="@+id/nav_order_details"/>
+        <action android:id="@+id/action_order_summery"
+            app:destination="@+id/nav_order_summery"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.letscoffee.Fragments.FragmentNotification"
+        tools:layout="@layout/fragment_notification">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_order_details"
+        android:name="com.letscoffee.Fragments.FragmentOrderDetails"
+        tools:layout="@layout/fragment_order_details">
+        <action android:id="@+id/action_tracking"
+            app:destination="@+id/nav_tracking"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_tracking"
+        android:name="com.letscoffee.Fragments.FragmentTracking"
+        tools:layout="@layout/fragment_tracking">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_view_category"
+        android:name="com.letscoffee.Fragments.FragmentViewCategory"
+        tools:layout="@layout/fragment_view_category">
+        <action android:id="@+id/action_shop_details"
+            app:destination="@+id/nav_shop_details"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_shop_details"
+        android:name="com.letscoffee.Fragments.FragmentShopDetails"
+        tools:layout="@layout/fragment_shop_details">
+        <action android:id="@+id/action_card"
+            app:destination="@+id/nav_cart"/>
+        <action android:id="@+id/action_tracking"
+            app:destination="@+id/nav_tracking"/>
+        <action android:id="@+id/action_login"
+            app:destination="@+id/nav_login"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.letscoffee.Fragments.FragmentSetting"
+        tools:layout="@layout/fragment_setting">
+    </fragment>
+    <fragment android:id="@+id/nav_login"
+        android:name="com.letscoffee.Fragments.FragmentLogin"
+        tools:layout="@layout/fragment_login">
+        <action android:id="@+id/action_register"
+            app:destination="@+id/nav_register"/>
+        <action android:id="@+id/action_forgot_password"
+            app:destination="@+id/nav_forget_password"/>
+        <action android:id="@+id/action_verify"
+            app:destination="@+id/nav_verify_mobile"/>
+    </fragment>
+    <fragment android:id="@+id/nav_register"
+        android:name="com.letscoffee.Fragments.FragmentCreateAccount"
+        tools:layout="@layout/fragment_create_account">
+        <action android:id="@+id/action_verify"
+            app:destination="@+id/nav_verify_mobile"/>
+    </fragment>
+    <fragment android:id="@+id/nav_verify_mobile"
+        android:name="com.letscoffee.Fragments.FragmentVerifyMobile"
+        tools:layout="@layout/fragment_verify_mobile">
+    </fragment>
+    <fragment android:id="@+id/nav_forget_password"
+        android:name="com.letscoffee.Fragments.FragmentForgotPassword"
+        tools:layout="@layout/fragment_forgot_password">
+    </fragment>
+    <fragment android:id="@+id/nav_search_shop"
+        android:name="com.letscoffee.Fragments.FragmentSearchShop"
+        tools:layout="@layout/fragment_search_shop">
+        <action android:id="@+id/action_shop_details"
+            app:destination="@+id/nav_shop_details"/>
+    </fragment>
+    <fragment android:id="@+id/nav_near_shop"
+        android:name="com.letscoffee.Fragments.FragmentNearByShop"
+        tools:layout="@layout/fragment_near_by_shop">
+        <action android:id="@+id/action_shop_details"
+            app:destination="@+id/nav_shop_details"/>
+    </fragment>
+    <fragment android:id="@+id/nav_cart"
+        android:name="com.letscoffee.Fragments.FragmentCart"
+        tools:layout="@layout/fragment_cart">
+        <action android:id="@+id/action_choose_time"
+            app:destination="@+id/nav_choose_time"/>
+        <action android:id="@+id/action_add_address"
+            app:destination="@+id/nav_address"/>
+        <action android:id="@+id/action_payment_type"
+            app:destination="@+id/nav_payment_type"/>
+    </fragment>
+    <fragment android:id="@+id/nav_choose_day"
+        android:name="com.letscoffee.Fragments.FragmentChooseDay"
+        tools:layout="@layout/fragment_choose_day">
+        <action android:id="@+id/action_add_address"
+            app:destination="@+id/nav_address"/>
+        <action android:id="@+id/action_choose_time"
+            app:destination="@+id/nav_choose_time"/>
+    </fragment>
+    <fragment android:id="@+id/nav_address"
+        android:name="com.letscoffee.Fragments.FragmentAddAddress"
+        tools:layout="@layout/fragment_add_address">
+        <action android:id="@+id/action_order_summery"
+            app:destination="@+id/nav_order_summery"/>
+
+    </fragment>
+    <fragment android:id="@+id/nav_order_summery"
+        android:name="com.letscoffee.Fragments.FragmentOrderSummery"
+        tools:layout="@layout/fragment_order_summery">
+        <action android:id="@+id/action_order_status"
+            app:destination="@+id/nav_order_status"/>
+
+
+    </fragment>
+    <fragment android:id="@+id/nav_order_status"
+        android:name="com.letscoffee.Fragments.FragmentOrderStatus"
+        tools:layout="@layout/fragment_order_status">
+
+    </fragment>
+    <fragment android:id="@+id/nav_choose_time"
+        android:name="com.letscoffee.Fragments.FragmentChooseTime"
+        tools:layout="@layout/fragment_choose_time">
+        <action android:id="@+id/action_search_shop"
+            app:destination="@+id/nav_search_shop"/>
+        <action android:id="@+id/action_payment_type"
+            app:destination="@+id/nav_payment_type"/>
+    </fragment>
+    <fragment android:id="@+id/nav_payment_type"
+        android:name="com.letscoffee.Fragments.FragmentPaymentType"
+        tools:layout="@layout/fragment_payment_type">
+        <action android:id="@+id/action_add_to_card"
+            app:destination="@+id/nav_add_to_card"/>
+    </fragment>
+    <fragment android:id="@+id/nav_add_to_card"
+        android:name="com.letscoffee.Fragments.FragmentAddToCard"
+        tools:layout="@layout/fragment_add_to_card">
+        <action android:id="@+id/action_order_summery"
+            app:destination="@+id/nav_order_summery"/>
+    </fragment>
+    <fragment android:id="@+id/nav_my_membership"
+        android:name="com.letscoffee.Fragments.FragmentMyMembership"
+        tools:layout="@layout/fragment_my_membership">
+        <action android:id="@+id/action_order_summery"
+            app:destination="@+id/nav_order_summery"/>
+    </fragment>
+    </navigation>
